@@ -1,0 +1,31 @@
+let collectionnft = [];
+
+function mintNFT(_title, _author, _genre, _pages) {
+    const book = {
+        title: _title,
+        author: _author,
+        genre: _genre,
+        pages: _pages,
+    }
+    collectionnft.push(book);
+}
+
+function listNFTs() {
+    for(let i =0; i < collectionnft.length; i++) {
+        console.log(collectionnft[i]);
+    }
+}
+
+function getTotalsupply () {
+    console.log("TOTAL NFT:" + collectionnft.length);
+}
+
+mintNFT("it end swith us", "colleen hoover", "romance", 890);
+mintNFT("it starts with us", "colleen hoover", "romance", 780);
+mintNFT("sunburned heart", "jonaxx", "romance", 1090);
+mintNFT("loving the sky", "inksteady", "romance", 700);
+mintNFT("golden scenery of tomorrow", "4rueminct", "romance", 690);
+
+listNFTs();
+
+getTotalsupply();
